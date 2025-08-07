@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="https://cdn.griinstitute.org/uploads/crm_company/0033600000DmrRO_Marketing_Edited_Logo_2025-06-14_01-23-10.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Perfil - GRI
+        Institute</title>
+</head>
+
+<body>
+    <section class="sect">
+        <div class="perfil-card">
+            <div class="card">
+                <div class="status"><span class="font-2-m cor-b1">ATIVO</span></div>
+                <!--INFORMAÇÕES-->
+                <div class="topo">
+                    <div class="profile-info">
+                        <div class="img-profile">
+                            <img src="https://cdn.griinstitute.org/uploads/crm_people/0031R00002OUMta_Marketing_Edited_Photo_2025-02-03_11-53-29.jpg"
+                                alt="Foto de perfil" />
+                            <div class="flag">
+                                <img src="https://www.griinstitute.org/assets/img/country_flags/1x1/br.svg"
+                                    alt="Bandeira Brasil" class="flag" />
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="nome">
+                                <h2 class="font-1-m-sb cor-b4">Armless John</h2>
+                                <p class="font-2-m cor-b1">Software Developer<br />GRI Institute</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://cdn.griinstitute.org/uploads/crm_company/0033600000DmrRO_Marketing_Edited_Logo_2025-06-14_01-23-10.jpg"
+                        alt="Logo" class="logo" />
+                </div>
+                <!--CLASSIFIAÇÃO-->
+                <div class="linha">
+                    <span class="font-2-m-b cor-b5">Servers, Web And Mobile</span>
+                    <!--ESTRELA-->
+                    <div class="estrela">
+                        <input type="checkbox" id="star">
+                        <label for="star">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <!--BARRA DE PROGRESO-->
+                <div class="barra-match">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <h3 class="font-2-m cor-b2">66% Match</h3>
+                </div>
+                <!--BOTÕES-->
+                <div class="botoes">
+                    <a href="#" class="btn-outline font-1-m">Intro request</a>
+                    <a href="#" class="btn-outline font-1-m">Private Meeting</a>
+                    <div class="btnfl">
+                        <a href="#" class="btn-fill font-1-m"><img src="./icon/fluent_chat-24-filled.svg" alt="">
+                            Chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const fill = document.querySelector(".progress");
+            fill.style.width = "0";
+            setTimeout(() => {
+                fill.style.width = "66%";
+            }, 200);
+        });
+    </script>
+</body>
+
+</html>

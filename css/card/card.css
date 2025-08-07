@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sect {
+    max-width: 1200vh;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 720px;
+    width: 100%;
+}
+
+.card {
+    padding: 44px;
+}
+
+.status span {
+    background: #fff;
+    border: 2px solid #707070;
+    border-radius: 40px;
+    padding: 8px 44px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* INTRO */
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.profile-info {
+    display: flex;
+    gap: 24px;
+}
+
+.img-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flag img {
+    margin-left: 64px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 100px;
+    border: 2px solid #707070;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* MACTH */
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+/* ESTRELA */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label svg {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    stroke: #e2bc33;
+    stroke-width: 2px;
+}
+
+input[type="checkbox"]:checked+label svg {
+    stroke: #b6920d;
+    fill: #b6920d;
+    animation: pop_42 0.5s ease-out;
+}
+
+@keyframes pop_42 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* PROGRESO */
+
+.barra-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-match h3 {
+    margin-left: 12px;
+}
+
+.progress-bar {
+    background: #cccccc;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    height: 14px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #0f467e;
+    width: 66%;
+    height: 100%;
+}
+
+/* BOTÕES */
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 22px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botoes a {
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #b6920d;
+    display: grid;
+    place-items: center;
+    color: #b6920d;
+}
+
+.btn-fill {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #b6920d;
+}
+
+.btn-fill img {
+    width: 24px;
+    height: 24px;
+}
+
+.btnfl a {
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #e2bc33;
+    border-color: #f0cc47;
+
+}
+
+.btn-fill:hover {
+    background-color: #e2bc33;
+    border-color: #f0cc47;
+}
+
+.botoes a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+    .perfil-card {
+        max-width: 90%;
+    }
+
+    .card {
+        padding: 32px;
+    }
+
+    .img-profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .flag img {
+        width: 28px;
+        height: 28px;
+        margin-left: 32px;
+    }
+
+    .status span {
+        padding: 6px 32px;
+        font-size: 13px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 12px;
+    }
+
+    label svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .btn-fill img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .botoes {
+        gap: 10px;
+    }
+
+    .botoes a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sect {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .perfil-card {
+        max-width: 100%;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .img-profile img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .flag img {
+        width: 24px;
+        height: 24px;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .status span {
+        padding: 6px 24px;
+        font-size: 12px;
+    }
+
+    .progress-bar {
+        height: 10px;
+        width: 100%;
+    }
+
+    .linha {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .botoes {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    label svg {
+        width: 28px;
+        height: 28px;
+    }
+}
